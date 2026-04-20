@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    /* ------------------------------------------------- */
+    /* 1️⃣  General compiler flags                    */
+    /* ------------------------------------------------- */
+    "target": "ES2020",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* ------------------------------------------------- */
+    /* 2️⃣  Include / exclude patterns                */
+    /* ------------------------------------------------- */
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+  },
+
+  /* ----------------------------------------------------- */
+  /* Optional: type declarations for node-fetch          */
+  /* ----------------------------------------------------- */
+  "typeAcquisition": {
+    "include": ["node-fetch"]
+  }
+}

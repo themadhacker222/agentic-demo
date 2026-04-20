@@ -1,0 +1,54 @@
+{
+  "name": "agentic-demo",
+  "version": "0.1.0",
+  "description": "Proof‑of‑concept for the Agentic Travel Recommendations API",
+  "main": "src/api/server.ts",
+  "scripts": {
+    /* --------------------------------------------------- */
+    /* 1️⃣  Compile the entire project (TypeScript → JS)   */
+    /* --------------------------------------------------- */
+    "build": "tsc",
+
+    /* --------------------------------------------------- */
+    /* 2️⃣  Run the API server (on port 3000)               */
+    /* --------------------------------------------------- */
+    "api": "nodemon --watch 'src/**/*.ts' --exec ts-node src/api/server.ts",
+
+    /* --------------------------------------------------- */
+    /* 3️⃣  Run the CLI client                            */
+    /* --------------------------------------------------- */
+    "cli": "node src/client/cli.js 1"
+  },
+
+  /* ----------------------------------------------------- */
+  /* Dependencies used at runtime                       */
+  /* ----------------------------------------------------- */
+  "dependencies": {
+    "express": "^4.18.3",
+    "node-fetch": "^3.3.2"   /* used by the CLI */
+  },
+
+  /* ----------------------------------------------------- */
+  /* Development dependencies                           */
+  /* ----------------------------------------------------- */
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.1",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  },
+
+  /* ----------------------------------------------------- */
+  /* To keep the package in sync with the workspace      */
+  /* ----------------------------------------------------- */
+  "keywords": [
+    "agentic",
+    "travel",
+    "recommendations",
+    "demo"
+  ],
+
+  "author": "TheMadHacker",
+  "license": "MIT"
+}
